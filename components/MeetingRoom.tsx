@@ -48,7 +48,7 @@ const MeetingRoom = ({ userId }: MeetingRoomProps) => {
   const callingState = useCallCallingState();
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://localhost:8080');
+    ws.current = new WebSocket('https://back-g5ch.onrender.com');
 
     ws.current.onopen = () => {
       console.log('WebSocket connection established');
